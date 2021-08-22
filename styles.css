@@ -1,0 +1,132 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background: #6d4f34;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar-item {
+	padding: 2em;
+	font-family: "Neue Montreal", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+.centerbar {
+	position: absolute;
+	top: 60%;
+	transform: translateY(-50%);
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	z-index: 2;
+}
+
+.centerbar-item:nth-child(1) {
+	background: #541a01;
+	font-family: "Carbon Bold";
+	text-transform: uppercase;
+	width: 240px;
+	height: 280px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #d44d13;
+	position: relative;
+	left: -100px;
+}
+
+.centerbar-item:nth-child(2) {
+	transform: rotate(-90deg);
+	position: relative;
+	top: -150px;
+	left: 100px;
+	font-family: "Neue Montreal";
+	text-transform: uppercase;
+}
+
+.bottombar {
+	position: absolute;
+	bottom: 0;
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottombar-item {
+	padding: 2em;
+	font-family: "Neue Montreal", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+.year {
+	font-style: italic;
+}
+
+.mail {
+	text-decoration: underline;
+}
+
+.header {
+	position: absolute;
+	right: 90px;
+	bottom: -200px;
+	z-index: 2;
+}
+
+.header-container {
+	display: flex;
+}
+
+.header-item {
+	font-family: "Neue Montreal";
+	color: rgb(0, 0, 0);
+	font-weight: bolder;
+	font-size: 580px;
+}
+
+.img-one {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 280px;
+	height: 340px;
+	background: url("./img-two.jpeg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.img-two {
+	position: absolute;
+	top: 25%;
+	right: 0%;
+	width: 540px;
+	height: 400px;
+	background: url("./img-one.jpeg") no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.img-three {
+	position: absolute;
+	left: 67%;
+	bottom: 0%;
+	transform: translateX(-50%);
+	z-index: 2;
+	width: 180px;
+	height: 200px;
+	background: url("./img-three.jpeg") no-repeat 50% 50%;
+	background-size: cover;
+}

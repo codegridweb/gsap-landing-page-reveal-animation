@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DAY-1</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="navbar">
+				<div class="logo navbar-item">
+					<ion-icon name="videocam-sharp"></ion-icon>
+				</div>
+				<div class="menu-toggle navbar-item">menu</div>
+			</div>
+			<div class="centerbar">
+				<div class="block-1 centerbar-item">
+					<div class="block-1-container">
+						<span>produced by cg/'21</span>
+					</div>
+				</div>
+				<div class="block-2 centerbar-item">
+					<div class="block-2-container">
+						open air show now <br />goes digital.
+					</div>
+				</div>
+			</div>
+
+			<div class="header">
+				<div class="header-container">
+					<div class="header-item">N</div>
+					<div class="header-item">R</div>
+				</div>
+			</div>
+			<div class="images">
+				<div class="img img-one"></div>
+				<div class="img img-two"></div>
+				<div class="img img-three"></div>
+			</div>
+			<div class="bottombar">
+				<div class="year bottombar-item">2021</div>
+				<div class="mail bottombar-item">get in touch</div>
+			</div>
+		</div>
+		<script>
+			TweenMax.staggerFrom(
+				".navbar > div",
+				0.8,
+				{
+					y: "60",
+					ease: Power3.easeInOut,
+					opacity: "0",
+					delay: 1,
+				},
+				0.1
+			);
+			TweenMax.staggerFrom(
+				".centerbar > div",
+				0.8,
+				{
+					x: "-40",
+					ease: Power3.easeInOut,
+					opacity: "0",
+					delay: 1.2,
+				},
+				0.1
+			);
+			TweenMax.staggerFrom(
+				".bottombar > div",
+				0.8,
+				{
+					y: "60",
+					ease: Power3.easeInOut,
+					opacity: "0",
+					delay: 1,
+				},
+				0.1
+			);
+			TweenMax.staggerFrom(
+				".images > div",
+				0.8,
+				{
+					x: "-200",
+					ease: Power2.easeInOut,
+					opacity: "0",
+					delay: 1.2,
+				},
+				0.16
+			);
+
+			TweenMax.staggerFrom(
+				".header-container > div",
+				3,
+				{
+					y: "500",
+					ease: Elastic.easeOut.config(2, 0.4),
+					delay: 2,
+				},
+				0.2
+			);
+		</script>
+	</body>
+</html>
